@@ -3,7 +3,7 @@
 #
 
 # Script vars
-export MONITOR1='DP-2'
+export MONITOR1='DP-0'
 export MONITOR2='HDMI-0'
 export SCREEN_X=1920
 export SCREEN_Y=1080

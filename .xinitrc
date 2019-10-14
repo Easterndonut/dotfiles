@@ -47,14 +47,14 @@ fi
 #export LD_PRELOAD="/usr/lib/libgio-2.0.so.0 /usr/lib/libglib-2.0.so.0"
 
 # nextcloud
-/usr/bin/nextcloud &
+#/usr/bin/nextcloud &
 
 # nm-applet
 # Don't need anymore cuz no wifi
 #/usr/bin/nm-applet &
 
 # load Xresources
-xrdb /home/leaty/.Xresources
+xrdb /home/jonas/.Xresources
 
 # Load pywal
 wal -R

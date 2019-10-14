@@ -209,7 +209,7 @@ gaps inner 40
 mouse_warping none
 
 set $mon_two HDMI-0
-set $mon_one DP-2
+set $mon_one DP-0
 
 # Workspaces
 set $ws_term "1:term"
@@ -224,9 +224,9 @@ workspace $ws_term output $mon_one
 workspace $ws_code output $mon_one
 workspace $ws_web output $mon_two
 workspace $ws_search output $mon_two
-workspace $ws_chat output $mon_one
+workspace $ws_chat output $mon_two
 workspace $ws_game output $mon_two
-workspace $ws_music output $mon_one
+workspace $ws_music output $mon_two
 
 # Assignments
 #assign [class="Sublime_text"] $ws_code
@@ -243,10 +243,10 @@ assign [class="Wine"] $ws_game
 # Autostart programs
 exec --no-startup-id i3-msg 'workspace 1:term; exec /usr/bin/urxvt'
 exec --no-startup-id i3-msg 'workspace 2:code; exec ~/.scripts/urxvt/exec code'
-exec --no-startup-id i3-msg 'workspace 3:web; exec /usr/bin/firefox'
+exec --no-startup-id i3-msg 'workspace 3:web; exec /usr/bin/chromium'
 exec --no-startup-id i3-msg 'workspace 5:chat; exec /usr/bin/discord'
 #exec --no-startup-id i3-msg 'workspace 4:chat; exec ~/.scripts/steam/steam.sh'
-exec --no-startup-id i3-msg 'workspace 7:music; exec ~/.scripts/urxvt/exec ncmpcpp'
+exec --no-startup-id i3-msg 'workspace 7:music; exec /usr/bin/spotify'
 
 # Glitter and diamonds
 exec_always --no-startup-id ~/.scripts/compton/compton.sh
@@ -259,7 +259,7 @@ exec_always --no-startup-id bash -l ~/.scripts/background/vidbg.sh
 # Hotkeys
 bindsym $mod+Shift+u exec ~/.scripts/colors/colors.sh
 bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
-bindsym Mod1+Return exec firefox --new-window https://google.com
+bindsym Mod1+Return exec chromium --new-window https://google.com
 
 # Move floating
 bindsym $mod+m mode "move" focus floating

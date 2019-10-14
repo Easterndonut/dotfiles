@@ -4,10 +4,10 @@ pkill xwinwrap
 
 sleep 1
 
-s1='In-The-Snow-Anime-Girl-Live-Wallpaper.m4v'
 #s2='Arknights-Anime-Mobile-Game-Live-Wallpaper.mp4'
 #s2='Calm-Bay-and-Blue-Sky-HD-Live-Wallpaper.mp4'
-s2='Zauberwald-Bavaria-Live-Wallpaper.mp4'
+s1='Bloodmoon-Diana-Animated-Live-Wallpaper.mp4'
+s2='Iron-Man-Superheroes-Marvel-War-Of-Heroes-Live-Wallpaper.mp4'
 
 #xwinwrap -g 1920x1080+1920+0 -ov -ni -fs -s -st -sp -b -nf -- mpv --mute=yes --loop --wid WID ~/cloud/wall/vid/$vid
 
